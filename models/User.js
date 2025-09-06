@@ -7,7 +7,7 @@ const User = sequelize.define('User', {
   password: { type: DataTypes.STRING, allowNull: false }
 }, {
   tableName: 'users',
-  timestamps: true, // uses createdAt, updatedAt
+  timestamps: true,
   createdAt: 'created_at',
   updatedAt: false
 });

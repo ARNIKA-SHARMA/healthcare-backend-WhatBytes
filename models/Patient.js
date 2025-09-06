@@ -13,7 +13,6 @@ const Patient = sequelize.define('Patient', {
   updatedAt: false
 });
 
-// Relation: Patient belongs to User
 Patient.belongsTo(User, { foreignKey: 'user_id' });
 User.hasMany(Patient, { foreignKey: 'user_id' });
 

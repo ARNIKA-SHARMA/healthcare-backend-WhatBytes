@@ -10,7 +10,6 @@ const Mapping = sequelize.define('Mapping', {}, {
   updatedAt: false
 });
 
-// Relations
 Mapping.belongsTo(Patient, { foreignKey: 'patient_id' });
 Mapping.belongsTo(Doctor, { foreignKey: 'doctor_id' });
 
